@@ -1,0 +1,73 @@
+---
+
+import Player from "./Player.astro";
+
+import zalayetaImg from "../assets/images/players/Marcelo_Zalayeta.jpg";
+import tonyPImg from "../assets/images/players/Tony_Pacheco.jpg";
+import washiImg from "../assets/images/players/Washington_Aguerre.jpg";
+import leoImg from "../assets/images/players/Leo_Fernández.jpg";
+
+---
+
+<section>
+
+	<section class="list__players grid grid-cols-2 grid-rows-3 gap-x-6 md:gap-x-12 gap-y-6 md:gap-y-12 justify-center justify-items-center items-center">
+
+		<Player 
+		name="Guillermo Quevedo"
+		role="Intergante"
+		image={leoImg?.src}
+		pageUrl="https://fabriciojordan.vercel.app"
+		githubUrl="https://fabriziojordan.github.io"
+		/>
+
+		<Player 
+		name="Nahuel Fernández"
+		role="Intergante"
+		image={zalayetaImg?.src}
+		pageUrl="https://fabriciojordan.vercel.app"
+		githubUrl="https://fabriziojordan.github.io"
+		/>
+		
+		<Player 
+		name="Mathías Lucero"
+		role="Intergante"
+		image={washiImg?.src}
+		pageUrl="https://fabriciojordan.vercel.app"
+		githubUrl="https://fabriziojordan.github.io"
+		/>
+		
+		<Player 
+		name="Nicolás Barboza"
+		role="Intergante"
+		image={tonyPImg?.src}
+		pageUrl="False"
+		githubUrl="False"
+		/>
+
+		<Player 
+		name="Fabricio Jordán"
+		role="Coordinador"
+		image={zalayetaImg?.src}
+		pageUrl="https://fabriciojordan.vercel.app"
+		githubUrl="https://fabriziojordan.github.io"
+		/>
+
+	</section>
+
+</section>
+
+
+<style is:inline>
+
+.list__players{
+	display: grid;
+  	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid > article:nth-child(5) {
+  	grid-column: 1 / -1;
+  	justify-self: center;
+}
+
+</style>

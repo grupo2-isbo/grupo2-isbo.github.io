@@ -1,0 +1,20 @@
+---
+
+import galleryImage from "../assets/images/gallery/a1.webp";
+
+---
+
+<article>
+                    <header class="relative h-[400px]">
+                        <div class="absolute top-0 right-0 flex flex-row gap-4 [&>img]:h-[400px] [&>img]:object-cover">
+                            <img src={galleryImage?.src} alt="#">
+                            <img src={galleryImage?.src} alt="#">
+                        </div>
+                    </header>
+                    
+                    <footer class="flex flex-col gap-6 max-w-lg items-start">
+                        <h4 class="text-2xl">Common.wtf</h4>
+                        <p class="text-[#8a847a]">A weekend project wrapped in a single HTML & CSS file. Commonly used unicodes, click to copy.</p>
+                        <a class="px-6 py-3 bg-white rounded-3xl text-black hover:bg-[#cacaca] transition-colors duration-300" href="">Common.wtf</a>
+                    </footer>
+                </article>

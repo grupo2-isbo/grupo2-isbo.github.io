@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+import ProjectMaterial from "../components/ProjectMaterial.astro";
+
+---
+
+<Layout title="Silencio Activo | Galería">
+	<Header page='gallery' />
+	<main class="overflow-hidden w-full px-6 md:px-10 pt-4 md:pt-12 pb-12 max-w-5xl m-auto flex flex-col gap-24">
+
+        <section class="pt-4 md:pt-12 flex flex-col gap-12 md:gap-24 justify-center items-start">
+
+            <header class="flex flex-col gap-8 justify-center items-start">
+                <h2 class="text-5xl md:text-6xl text-balance !leading-[5.5rem]">Galería</h2>
+
+                <p class="text-lg max-w-xl text-balance">Imágenes del proceso que llevamos a cabo para el proyecto "Silencio Activo".</p>
+            </header>
+        
+            <section class="flex flex-col gap-24
+            [&>article]:flex [&>article]:flex-col [&>article]:gap-8">
+        
+                <ProjectMaterial />
+
+                <ProjectMaterial />
+
+                <ProjectMaterial />
+
+
+            </section>
+        
+        </section>
+
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	
+</style>

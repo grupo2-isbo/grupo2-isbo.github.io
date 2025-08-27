@@ -1,0 +1,20 @@
+---
+import Demostration from "./Demostration.astro";
+import SemiFooter from "./SemiFooter.astro";
+
+import AboutUs from '../components/AboutUs.astro';
+
+---
+
+
+<section class="pt-4 md:pt-12 flex flex-col gap-12 md:gap-24">
+    
+    <article class="max-w-2xl flex flex-col justify-center items-start gap-4">
+        <h2 class="text-5xl md:text-6xl text-balance !leading-[5.5rem]">Proyecto Silencio Activo</h2>
+        <h5 class="text-lg md:text-xl text-[#8a847a]">Por el grupo <span class="text-[--text-color-principal] text-shadow-under-yellow">Peñarol Inteligencia D1</span></h5>
+    </article>
+
+    <AboutUs />
+
+    <SemiFooter />
+</section>
