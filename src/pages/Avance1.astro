@@ -17,36 +17,38 @@ import projectImage1 from "../assets/images/avances/avance1/avance1.jpg";
         <section class="pt-4 md:pt-12 flex flex-col gap-12 md:gap-24">
             
             <article class=" max-w-2xl flex flex-col justify-center items-start gap-12">
-                <h2 class="text-5xl md:text-6xl text-pretty !leading-[5.5rem]">Avances</h2>
+                <h2 class="text-5xl md:text-6xl text-pretty !leading-[5.5rem]">Avance 1</h2>
             </article>
 
-          	<section class="flex flex-col gap-24 md:gap-40">
+          	<section class="flex flex-col gap-24 md:gap-36">
 
 				<article>
-				        <article class="flex flex-col gap-8 lg:gap-28">
-				            <header class="overflow-hidden">
-				                <img class="object-cover w-full max-w-[468px]  lg:max-w-[572px] max-h-[400px] md:max-h-[500px] m-auto transition-transform hover:scale-110" src={projectImage1?.src} alt="">
-				            </header>
-				            <footer class="flex flex-col gap-6 justify-center items-start">
-				                <h3 class="text-5xl">Avance 1</h3>
-				                <p class="text-[#8A847A] text-lg">31 de Agosto • 2025</p>
+					<article class="flex flex-col gap-8 lg:gap-28">
+				        <header class="overflow-hidden">
+				            <img class="object-cover w-full max-w-[468px]  lg:max-w-[572px] max-h-[400px] md:max-h-[500px] m-auto transition-transform hover:scale-110" src={projectImage1?.src} alt="">
+				        </header>
+				        <footer class="flex flex-col gap-6 justify-center items-start">
+				                <p class="text-[#8A847A] text-lg">Publicado el 31 de Agosto • 2025</p>
 				                <div class="flex flex-col gap-4">
 				                    <p class="md:text-lg">
-				                    13 de agosto: El primer día de proyecto Decidimos el nombre del equipo el cual fue "Peñarol Inteligencia D1". Lo segundo fue decidir el proyecto, las propuestas eran, semáforo inteligente, regadora automática y sistema de alarma móvil, al final nos inclinamos por la primera opción la cual es "semáforo inteligente" este consiste en un sensor de sonido como base el cual emita luces indicando si el lugar donde está colocado es adecuado para el aprendizaje refiriéndonos al sonido. 
-				                    Para ello necesitamos una Microbit, un IoT kit del cual por ahora solamente tenemos pensado utilizar su sensor de sonido y IoT Bit, cableado y 3 luces led rojo, amarillo y verde.
-				                </p>
-				                <p class="md:text-lg">
-				                    20 de agosto: Este día se comenzó con la platilla de la página web, se avanzó en cada aspecto de esta, se determinó, diseño, forma de contenido, etc. 
-				                    Avanzamos con el documento de avance diario, se comenzó con la investigación con más profundidad sobre los materiales requeridos para silencio activo, se determinó que para hacer pruebas era más cómodo una pantalla led, y se estudió otro lenguaje de programación para poder aplicarlo a IoT Bit y Microit.
-				                </p>
-				                <p class="md:text-lg">
-				                    27 de agosto: Este día fue bastante importante ya que comenzamos con el ensamblaje básico del proyecto, en el cual determinamos que necesitábamos una protoboard lo cual no teníamos en cuenta, teníamos como faltante un led rojo y se comenzó a programar en python, se logro avances y un funcionamiento básico del proyecto. Empezamos utilizando una microbit v2 y terminamos utilizando microbit v1 por un error desconocido.
-				                    También se avanzó con la platilla del proyecto.
-				                </p>
-				            </footer>
+				                    	<span class="text__time px-2  rounded-xl text-[#00c4ff] bg-[#454545]">13 de agosto</span> Primer día de proyecto y decidimos que el nombre del equipo fuese "Peñarol Inteligencia D1". Lo segundo fue decidir el proyecto, las propuestas eran, semáforo inteligente, regadora automática y sistema de alarma móvil, al final nos inclinamos por la primera opción la cual es un "semáforo inteligente" que consiste en un sensor de sonido como base, el cual emite luz indicando si el ambiente es adecuado para el aprendizaje refiriéndose al sonido. 
+				                    Para ello necesitamos una Microbit, un IoT kit del cual por ahora solamente tenemos pensado utilizar su sensor de sonido y IoT Bit, cableado y 3 luces led, rojo, amarillo y verde.
+				                	</p>
+				                	<p class="md:text-lg">
+				                    	<span class="text__time px-2  rounded-xl text-[#00c4ff] bg-[#454545]">20 de agosto</span>
+				                    	Comenzamos con la platilla de la página web, se avanzó en cada aspecto, determinandose, diseño, contenido, etc. 
+				                    	Avanzamos con el documento de avance diario, se comenzó con la investigación con más profundidad sobre los materiales requeridos para "silencio activo" y se determinó que para las pruebas se utilizaría una pantalla led por comodidad, y se estudió otro lenguaje de programación para poder aplicarlo al IoT Bit y Microbit.
+				                	</p>
+				                	<p class="md:text-lg">
+				                    	<span class="text__time px-2  rounded-xl text-[#00c4ff] bg-[#454545]">27 de agosto</span> 
+				                    	Día bastante importante ya que comenzamos con el ensamblaje básico del proyecto, en el cual determinamos que necesitábamos una protoboard que anteriormente no tuvimos en cuenta, y teníamos como faltante un led rojo. Se comenzó a programar en python, se logró avances y un funcionamiento básico en el proyecto. Empezamos utilizando una microbit v2 y terminamos utilizando microbit v1 por un error desconocido.
+				                	    También se avanzó con la platilla del proyecto.
+				                	</p>
 				                </div>
-				        </article>
+				        </footer>
 				    </article>
+
+				</article>
 
 			</section>
 
@@ -57,6 +59,9 @@ import projectImage1 from "../assets/images/avances/avance1/avance1.jpg";
 </Layout>
 
 <style>
+	.text__time{
+	    font-variant: petite-caps;
+	}
 	
 	.serviceSvg{
 		filter: opacity(0.4);

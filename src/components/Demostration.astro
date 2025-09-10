@@ -1,9 +1,34 @@
 ---
-import Avance from "./Avance.astro";
+import Avance from "./AvanceComp.astro";
+
+
+import avance1Image from "../assets/images/avances/avance1/avance1.jpg";
 ---
 
 <section class="flex flex-col gap-24 md:gap-40">
 
-    <Avance />
+    <Avance 
+        name="Avance 1"
+        imgUrl={avance1Image?.src}
+        pageUrl="Avance1"
+        date="31 de Agosto • 2025"
+        desc="Mes de Agosto donde empezamos el proyecto 'Silencio Activo'..."
+    />
+
+    <Avance 
+        name="Avance 1"
+        imgUrl={avance1Image?.src}
+        pageUrl="Avance1"
+        date="31 de Agosto • 2025"
+        desc="Empezamos el proyecto 'Silencio Activo'..."
+    />
+
+    <Avance 
+        name="Avance 1"
+        imgUrl={avance1Image?.src}
+        pageUrl="Avance1"
+        date="31 de Agosto • 2025"
+        desc="Empezamos el proyecto 'Silencio Activo'..."
+    />
 
 </section>

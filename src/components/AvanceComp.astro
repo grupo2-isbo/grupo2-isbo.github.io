@@ -1,0 +1,26 @@
+---
+
+export interface Props {
+  name: string;
+  imgUrl: string;
+  pageUrl: string;
+  date: string;
+  desc: string;
+}
+
+const { name, imgUrl, pageUrl, date, desc} = Astro.props;
+
+---
+
+<a class="" href={pageUrl}>
+    <article class="flex flex-col md:flex-row gap-8 lg:gap-28">
+        <header class="overflow-hidden">
+            <img class="object-cover w-full max-w-[468px] lg:max-w-[572px] max-h-[350px] md:max-h-[420px] m-auto transition-transform hover:scale-110" src={imgUrl} alt="">
+        </header>
+        <footer class="flex flex-col gap-2 justify-center items-start md:max-w-96">
+            <h3 class="text-5xl py-4">{name}</h3>
+            <p class="text-[#8A847A] text-lg">{date}</p>
+            <p class="md:text-lg">{desc}</p>
+        </footer>
+    </article>
+</a>
